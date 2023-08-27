@@ -30,8 +30,6 @@ def random_anime():
     info = {}
     dir = os.getcwd()
     print(dir)
-    if dir[len(dir)-3:] != 'app':
-        os.chdir("app/")
 
     random_anime_ranks = []
     for i in range(4):
@@ -63,8 +61,6 @@ def random_anime():
 def find_summoner_info(user):
     info = {}
     dir = os.getcwd()
-    if dir[len(dir)-3:] != 'app':
-        os.chdir("app/")
 
     try: #check for if text file for key exist
         with open("keys/key_Riot.txt", "r") as file:
